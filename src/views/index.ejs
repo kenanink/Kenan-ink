@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="body">
+    <%-include('partials/header') %>
+  
+    <main class="main">
+      <section class="home-details">
+        <div class="home-details-text">
+          <h1 class="home-title">MOIDI HOUSE</h1>
+          <h3 class="home-text">El mejor lugar para aprender un nuevo idioma.</h3>
+          <button class="home-button">¡Vamos!</button>
+        </div>
+        <figure class="img-figure">
+          <img src="../../../img/tutorial.svg" class="home-img" >
+        </figure>
+      </section>
+  
+      <section class="section-courses-now">
+        <h2 class="courses-title">Cursos Destacados</h2>
+        <div class="courses-cards"> <!-- class="col-lg-3 col-md-4 col-sm-6 col-xs-12" -->
+          <div class="now-courses">
+            <div class="card"><a href="/producto/cursos"> <!-- #curso-aleman -->
+              <img class="card-img" src="/img/paises/alemania-bandera.webp" alt="Bandera Alemania">
+              <div class="card-body">
+                <h4 class="card-title">Curso de Alemán</h4>
+                <!-- <p class="card-text"></p> -->
+              </div></a>
+            </div>
+        </div>
+        <div class="now-courses">
+          <div class="card"><a href="/producto/cursos"> <!-- #curso-espanol -->
+            <img class="card-img" src="/img/paises/espana-bandera.webp" alt="Bandera España">
+            <div class="card-body">
+              <h4 class="card-title">Curso de Español</h4>
+              <!-- <p class="card-text"></p> -->
+            </div></a>
+          </div>
+        </div>
+        <div class="now-courses">
+          <div class="card"><a href="/producto/cursos"> <!-- #curso-ingles -->
+        <img class="card-img" src="/img/paises/inglaterra-bandera.jpg" alt="Bandera Inglaterra">
+        <div class="card-body">
+          <h4 class="card-title">Curso de Inglés</h4>
+          <!-- <p class="card-text"></p> -->
+        </div></a>
+      </div>
+    </div>
+    <div class="now-courses">
+      <div class="card"><a href="/producto/cursos"> <!-- #curso-portugues -->
+        <img class="card-img" src="/img/paises/brasil-bandera.webp" alt="Bandera Brasil">
+        <div class="card-body">
+          <h4 class="card-title">Curso de Portugúes</h4>
+          <!-- <p class="card-text"></p> -->
+        </div></a>
+      </div>
+    </div>
+    </div>
+  </section>
+  
+  <section class="section-courses-next">
+    <h2 class="courses-title">Próximos Cursos</h2>
+    <div class="courses-cards"> <!-- class="col-lg-3 col-md-4 col-sm-6 col-xs-12" -->
+      <div class="next-courses">
+        <!-- <p>Próximamente</p> -->
+        <div class="card">
+          <img class="card-img" src="/img/paises/corea-bandera.webp" alt="Bandera Corea">
+          <div class="card-body">
+            <h4 class="card-title">Curso de Coreano</h4>
+            <!-- <p class="card-text"></p> -->
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img" src="/img/paises/francia-bandera.webp" alt="Bandera Francia">
+        <div class="card-body">
+          <h4 class="card-title">Curso de Francés</h4>
+          <!-- <p class="card-text"></p> -->
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img" src="/img/paises/italia-bandera.webp" alt="Bandera Italia">
+        <div class="card-body">
+          <h4 class="card-title">Curso de Italiano</h4>
+          <!-- <p class="card-text"></p> -->
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img" src="/img/paises/japon-bandera.webp" alt="Bandera Japon">
+        <div class="card-body">
+          <h4 class="card-title">Curso de Japonés</h4>
+          <!-- <p class="card-text"></p> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+  
+   <%-include('partials/footer') %>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
