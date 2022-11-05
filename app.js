@@ -17,6 +17,6 @@ app.use('/producto', productosRoutes);
 app.set('view engine','ejs');
 app.set('views', path.join(__dirname,'./src/views'));
 
-app.listen(process.env.PORT || 3005, function() {
-    console.log("corriendo server 3000")
+app.listen(process.env.PORT || 3010, function() {
+    console.log("corriendo server 3010")
 });
