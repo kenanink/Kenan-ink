@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenan_Ink_Tattoos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gray-900 text-white">
+
+  <header class="fixed w-full bg-gray-800 bg-opacity-80 backdrop-blur-md z-50">
+    <nav id="main-navbar" class="fixed top-6 inset-x-0 z-50 px-6 transition-all duration-700 ease-in-out">
+      <div class="max-w-5xl mx-auto bg-black/90 backdrop-blur-md border border-gray-700 rounded-full px-6 py-3 flex items-center justify-between shadow-[0_0_30px_rgba(0,0,0,0.5)]">
+        
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+            <span class="text-black font-black text-xl">K</span>
+          </div>
+          <span class="text-white font-bold text-lg tracking-widest uppercase hidden sm:block">Kenan Ink</span>
+        </div>
+
+        <ul class="hidden md:flex items-center gap-8 text-sm font-medium tracking-widest uppercase">
+          <li><a href="#inicio" class="text-gray-400 hover:text-white transition-colors">Inicio</a></li>
+          <li><a href="#galeria" class="text-gray-400 hover:text-white transition-colors">Galería</a></li>
+          <li><a href="#servicios" class="text-gray-400 hover:text-white transition-colors">Servicios</a></li>
+          <li><a href="#contacto" class="text-gray-400 hover:text-white transition-colors">Contacto</a></li>
+        </ul>
+
+        <button id="hamburger-btn" class="md:hidden flex flex-col justify-center items-center gap-1.5 w-10 h-10 focus:outline-none">
+          <span class="w-6 h-0.5 bg-white transition-all"></span>
+          <span class="w-6 h-0.5 bg-white transition-all"></span>
+          <span class="w-6 h-0.5 bg-white transition-all"></span>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="hidden flex-col bg-black/95 border border-gray-800 rounded-3xl mt-3 p-6 gap-6 text-center uppercase tracking-[0.2em] text-sm animate-in fade-in slide-in-from-top-4">
+        <a href="#inicio" class="text-white">Inicio</a>
+        <a href="#galeria" class="text-gray-400">Galería</a>
+        <a href="#servicios" class="text-gray-400">Servicios</a>
+        <a href="#contacto" class="text-gray-400">Contacto</a>
+      </div>
+    </nav>
+    <!-- <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold text-indigo-400">Kenan ink tattoos</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#inicio" class="hover:text-indigo-400">Inicio</a></li>
+        <li><a href="#galeria" class="hover:text-indigo-400">Galería</a></li>
+        <li><a href="#servicios" class="hover:text-indigo-400">Servicios</a></li>
+        <li><a href="#contacto" class="hover:text-indigo-400">Contacto</a></li>
+      </ul>
+    </nav> -->
+  </header>
+
+  <section id="inicio" class="h-screen flex flex-col justify-center items-center text-center px-6 bg-cover bg-center"
+      style="background-image: url('img/hero.jpg');">
+      <div class="bg-black bg-opacity-60 p-8 rounded-xl">
+        <h2 class="text-4xl md:text-6xl font-bold mb-4">Arte en tu piel</h2>
+        <p class="text-lg md:text-xl text-gray-300">Estilo geométrico, minimalista y en blanco y negro</p>
+        <!-- <div class="" style="">
+          <div class="imgpt"><a aria-label="Image result for kenan ink tattoos" role="link" class="iusc"
+              style="height:186px;width:186px"
+              m="{&quot;sid&quot;:&quot;&quot;,&quot;cturl&quot;:&quot;&quot;,&quot;cid&quot;:&quot;LLS5KqBU&quot;,&quot;purl&quot;:&quot;https://www.instagram.com/kenan_ink_tattoos/&quot;,&quot;murl&quot;:&quot;https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3019329329540036380&quot;,&quot;turl&quot;:&quot;https://ts2.explicit.bing.net/th?id=OIP.LLS5KqBUPDxkH5xiH3WE7wHaHa&amp;pid=15.1&quot;,&quot;md5&quot;:&quot;2cb4b92aa0543c3c641f9c621f7584ef&quot;,&quot;shkey&quot;:&quot;UwqkyocJI62lxUqjj5IEajRBTxtrI4IipEs5JedqUug=&quot;,&quot;t&quot;:&quot;𝓚𝓮𝓿𝓲𝓷 𝓐𝓷𝓭𝓻𝓮𝓼 (@kenan_ink_tattoos) • Instagram photos and videos&quot;,&quot;mid&quot;:&quot;A6A71D77211C37D8373BF5D86509080A67902C09&quot;,&quot;desc&quot;:&quot;𝓚𝓮𝓿𝓲𝓷 𝓐𝓷𝓭𝓻𝓮𝓼 (@kenan_ink_tattoos) • Instagram photos and videos&quot;}"
+              data-fnvg="1" data-idpos="0,90"
+              href="/images/search?view=detailV2&amp;ccid=LLS5KqBU&amp;id=A6A71D77211C37D8373BF5D86509080A67902C09&amp;thid=OIP.LLS5KqBUPDxkH5xiH3WE7wHaHa&amp;mediaurl=https%3a%2f%2flookaside.instagram.com%2fseo%2fgoogle_widget%2fcrawler%2f%3fmedia_id%3d3019329329540036380&amp;cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.2cb4b92aa0543c3c641f9c621f7584ef%3frik%3dCSyQZwoICWXY9Q%26pid%3dImgRaw%26r%3d0&amp;exph=1440&amp;expw=1440&amp;q=kenan+ink+tattoos&amp;FORM=IRPRST&amp;ck=8A9D97565844D23AB69272F8BA1BBE3C&amp;selectedIndex=0&amp;itb=0"
+              h="ID=images,5218.1" data-focevt="1">
+              <div class="img_cont hoff"><img class="mimg" style="color: rgb(140, 87, 63);" height="186" width="186"
+                  src="https://th.bing.com/th/id/OIP.LLS5KqBUPDxkH5xiH3WE7wHaHa?w=186&amp;h=186&amp;c=7&amp;r=0&amp;o=7&amp;dpr=1.3&amp;pid=1.7&amp;rm=3"
+                  alt="Image result for kenan ink tattoos" data-thhnrepbd="1" data-bm="178"></div>
+            </a>
+            <div class="img_info hon"><span class="nowrap" style="max-width: 170px;">1440×1440</span>
+              <div class="lnkw" style="max-width: 170px;"><a title="instagram.com" target="_blank" data-hookid="pgdom"
+                  href="https://www.instagram.com/kenan_ink_tattoos/" h="ID=images,6110.1"><span class="cipl ">
+                    <div class="cico" style="width:12px;height:12px;"><img
+                        src="https://th.bing.com/th/id/ODF.Tw-tjGfaKLIkitkJNlB7SA?w=12&amp;h=12&amp;c=7&amp;rs=1&amp;p=0&amp;o=7&amp;dpr=1.3&amp;pid=1.7&amp;rm=3"
+                        height="12" width="12" role="presentation" dpr="1.3" class="rms_img" data-bm="179"></div>
+                  </span>instagram.com</a></div>
+            </div>
+          </div>
+          <div class="infopt" style=" " data-hovstyle=""><a class="inflnk"
+              aria-label="𝓚𝓮𝓿𝓲𝓷 𝓐𝓷𝓭𝓻𝓮𝓼 (@kenan_ink_tattoos) • Instagram photos and videos"
+              href="/images/search?view=detailV2&amp;ccid=LLS5KqBU&amp;id=A6A71D77211C37D8373BF5D86509080A67902C09&amp;thid=OIP.LLS5KqBUPDxkH5xiH3WE7wHaHa&amp;mediaurl=https%3a%2f%2flookaside.instagram.com%2fseo%2fgoogle_widget%2fcrawler%2f%3fmedia_id%3d3019329329540036380&amp;cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.2cb4b92aa0543c3c641f9c621f7584ef%3frik%3dCSyQZwoICWXY9Q%26pid%3dImgRaw%26r%3d0&amp;exph=1440&amp;expw=1440&amp;q=kenan+ink+tattoos&amp;FORM=IRPRST&amp;ck=8A9D97565844D23AB69272F8BA1BBE3C&amp;selectedIndex=0&amp;itb=0"
+              h="ID=images,5218.2"></a>
+            <div class="infnmpt">
+              <div class="infpd hoff">
+                <ul class="b_dataList">
+                  <li><a title="𝓚𝓮𝓿𝓲𝓷 𝓐𝓷𝓭𝓻𝓮𝓼 (@kenan_ink_tattoos) • Instagram photos and videos"
+                      href="/images/search?view=detailV2&amp;ccid=LLS5KqBU&amp;id=A6A71D77211C37D8373BF5D86509080A67902C09&amp;thid=OIP.LLS5KqBUPDxkH5xiH3WE7wHaHa&amp;mediaurl=https%3a%2f%2flookaside.instagram.com%2fseo%2fgoogle_widget%2fcrawler%2f%3fmedia_id%3d3019329329540036380&amp;cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.2cb4b92aa0543c3c641f9c621f7584ef%3frik%3dCSyQZwoICWXY9Q%26pid%3dImgRaw%26r%3d0&amp;exph=1440&amp;expw=1440&amp;q=kenan+ink+tattoos&amp;FORM=IRPRST&amp;ck=8A9D97565844D23AB69272F8BA1BBE3C&amp;selectedIndex=0&amp;itb=0"
+                      h="ID=images,5218.3" tabindex="-1">𝓚𝓮𝓿𝓲𝓷 𝓐𝓷𝓭𝓻𝓮𝓼 (@kenan_ink_tattoos) • Instagram photos
+                      and videos</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="scperslbl" role="button" data-bm="271"><span class="scicn onusvd" aria-label="Save"
+              tabindex="0">Save</span><span class="scicn onsvd" aria-label="Saved" tabindex="0">Saved</span></div>
+          <div class="scpersicn"></div>
+        </div> -->
+          <a href="#contacto"
+          class="mt-6 inline-block px-6 py-3 bg-indigo-500 hover:bg-indigo-600 rounded-lg shadow-lg transition">
+          Agenda tu cita
+        </a>
+      </div>
+    </section>
+
+    <section id="galeria" class="py-20 bg-black">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-white text-4xl font-bold mb-12 uppercase tracking-tighter">Mi Portfolio</h2>
+      
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div class="group relative aspect-square bg-gray-900 rounded-xl overflow-hidden border border-gray-800">
+          <img src="/img/Tattoo1.png" class="w-full h-full object-cover group-hover:grayscale transition-all duration-500">
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <a href="https://www.instagram.com/kenan_ink_tattoos/" target="_blank" class="text-white text-xs font-bold border border-white px-4 py-2 rounded-full uppercase">Ver en Instagram</a>
+          </div>
+        </div>
+        <div class="group relative aspect-square bg-gray-900 rounded-xl overflow-hidden border border-gray-800">
+          <img src="/img/Tattoo2.png" class="w-full h-full object-cover group-hover:grayscale transition-all duration-500">
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <a href="https://www.instagram.com/kenan_ink_tattoos/" target="_blank" class="text-white text-xs font-bold border border-white px-4 py-2 rounded-full uppercase">Ver en Instagram</a>
+          </div>
+        </div>
+        <div class="group relative aspect-square bg-gray-900 rounded-xl overflow-hidden border border-gray-800">
+          <img src="/img/Tattoo3.png" class="w-full h-full object-cover group-hover:grayscale transition-all duration-500">
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <a href="https://www.instagram.com/kenan_ink_tattoos/" target="_blank" class="text-white text-xs font-bold border border-white px-4 py-2 rounded-full uppercase">Ver en Instagram</a>
+          </div>
+        </div>
+        <div class="group relative aspect-square bg-gray-900 rounded-xl overflow-hidden border border-gray-800">
+          <img src="/img/Tattoo4.png" class="w-full h-full object-cover group-hover:grayscale transition-all duration-500">
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <a href="https://www.instagram.com/kenan_ink_tattoos/" target="_blank" class="text-white text-xs font-bold border border-white px-4 py-2 rounded-full uppercase">Ver en Instagram</a>
+          </div>
+        </div>
+        </div>
+      
+      <div class="mt-12">
+        <a href="https://instagram.com/kenan_ink_tattoos" target="_blank" class="text-gray-400 hover:text-white transition-colors uppercase tracking-widest text-sm">
+          Sigue mi arte completo →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section id="instagram-feed" class="py-20 bg-black">
+    <div class="container mx-auto px-6">
+      
+      <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+        <div>
+          <h2 class="text-white text-4xl font-bold uppercase tracking-tighter">Últimos Trabajos</h2>
+          <p class="text-gray-500 mt-2 font-medium">Sígueme en Instagram <span class="text-white">@kenan_ink_tattoos</span></p>
+        </div>
+        <a href="https://instagram.com/Kenan_ink_tattoos" target="_blank" 
+          class="px-6 py-2 border border-gray-700 text-white rounded-full hover:bg-white hover:text-black transition-all duration-300 text-sm font-bold uppercase tracking-widest">
+          Ver perfil completo
+        </a>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        
+        <div class="group relative aspect-square overflow-hidden bg-gray-900 rounded-xl cursor-pointer">
+          <img src="img/work1.jpg" alt="Tattoo Geométrico" class="w-full h-full object-cover transition duration-500 group-hover:scale-110 group-hover:opacity-50">
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
+            <span class="text-white text-xs font-bold border border-white px-4 py-2 rounded-full uppercase tracking-widest">Ver Trabajo</span>
+          </div>
+        </div>
+
+        <div class="group relative aspect-square overflow-hidden bg-gray-900 rounded-xl cursor-pointer">
+          <img src="img/work2.jpg" alt="Minimalista" class="w-full h-full object-cover transition duration-500 group-hover:scale-110 group-hover:opacity-50">
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
+            <span class="text-white text-xs font-bold border border-white px-4 py-2 rounded-full uppercase tracking-widest">Ver Trabajo</span>
+          </div>
+        </div>
+
+        <div class="group relative aspect-square overflow-hidden bg-gray-900 rounded-xl cursor-pointer">
+          <img src="img/work3.jpg" alt="Sombras" class="w-full h-full object-cover transition duration-500 group-hover:scale-110 group-hover:opacity-50">
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
+            <span class="text-white text-xs font-bold border border-white px-4 py-2 rounded-full uppercase tracking-widest">Ver Trabajo</span>
+          </div>
+        </div>
+
+        <div class="group relative aspect-square overflow-hidden bg-gray-900 rounded-xl cursor-pointer">
+          <img src="https://via.placeholder.com/600" alt="Nuevo trabajo" class="w-full h-full object-cover transition duration-500 group-hover:scale-110 group-hover:opacity-50">
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
+            <span class="text-white text-xs font-bold border border-white px-4 py-2 rounded-full uppercase tracking-widest">Ver Trabajo</span>
+          </div>
+        </div>
+
+        </div>
+
+      <div class="mt-16 text-center">
+          <button class="bg-white text-black px-10 py-4 rounded-full font-black uppercase tracking-widest hover:bg-gray-200 transition-colors shadow-xl">
+              Cargar más fotos
+          </button>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- <section id="galeria" class="py-20 container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">Mis Trabajos</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <img src="img/work1.jpg" alt="Tatuaje 1" class="rounded-lg shadow-lg hover:scale-105 transition">
+      <img src="img/work2.jpg" alt="Tatuaje 2" class="rounded-lg shadow-lg hover:scale-105 transition">
+      <img src="img/work3.jpg" alt="Tatuaje 3" class="rounded-lg shadow-lg hover:scale-105 transition">
+    </div>
+  </section> -->
+
+  <section id="servicios" class="py-20 bg-gray-800">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-12">Servicios</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="bg-gray-700 p-6 rounded-xl shadow-lg">
+          <h3 class="text-xl font-semibold mb-2">Tatuajes Geométricos</h3>
+          <p class="text-gray-300">Líneas limpias y figuras precisas para diseños únicos.</p>
+        </div>
+
+        <div class="bg-gray-700 p-6 rounded-xl shadow-lg">
+          <h3 class="text-xl font-semibold mb-2">Minimalistas</h3>
+          <p class="text-gray-300">Diseños pequeños, discretos y elegantes en blanco y negro.</p>
+        </div>
+
+        <div class="bg-gray-700 p-6 rounded-xl shadow-lg">
+          <h3 class="text-xl font-semibold mb-2">Sombras y Detalles</h3>
+          <p class="text-gray-300">Realismo en grises con alto nivel de detalle.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="py-20 container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">Contáctame</h2>
+    <p class="text-gray-300 mb-4">Agenda tu cita o consulta precios</p>
+    <div class="flex justify-center gap-6">
+      <a href="mailto:tuemail@gmail.com" class="hover:text-indigo-400">📧 Email</a>
+      <a href="https://wa.me/+573146091262" target="_blank" class="hover:text-indigo-400">📱 WhatsApp</a>
+      <a href="https://instagram.com/Kenan_ink_tattoos" target="_blank" class="hover:text-indigo-400">📷 Instagram</a>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 py-6 text-center text-gray-500 text-sm">
+    2025 KENAN Tattoos
+  </footer>
+  <script>
+    const navbar = document.getElementById('main-navbar');
+    const btn = document.getElementById('hamburger-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    // 1. Efecto Scroll (Desaparece gradualmente)
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        // Se vuelve invisible y sube un poco
+        navbar.style.opacity = '0';
+        navbar.style.transform = 'translateY(-20px)';
+        navbar.style.pointerEvents = 'none'; // Evita clics accidentales cuando no se ve
+      } else {
+        // Reaparece al estar arriba
+        navbar.style.opacity = '1';
+        navbar.style.transform = 'translateY(0)';
+        navbar.style.pointerEvents = 'auto';
+      }
+    });
+
+    // 2. Control Menú Hamburguesa
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('flex');
+    });
+
+    // Cerrar menú al hacer click en un enlace
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => menu.classList.add('hidden'));
+    });
+  </script>
+</body>
+
+</html>

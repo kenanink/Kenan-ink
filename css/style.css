@@ -1,0 +1,9 @@
+/* === Estilos personalizados === */
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  transition: transform 0.3s ease-in-out;
+}
